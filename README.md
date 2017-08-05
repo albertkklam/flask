@@ -2,6 +2,8 @@
 
 ## Overview
 
+Good apps start with good web development practices. Learning about both through popular Python web frameworks, such as [Django](https://www.djangoproject.com/) and [Flask](http://flask.pocoo.org/).
+
 ## Resources
 
 ### Flask
