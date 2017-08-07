@@ -4,6 +4,6 @@ from . import views
 urlpatterns = [
 	url(r'^hello', views.hello, name = 'hello'),
 	url(r'^morning/', views.morning, name = 'morning'),
-	url(r'^random/(\d+)/', views.randNum, name = 'random'),
-	url(r'^articles/(\d{2})/(\d{4})', views.viewArticles, name = 'articles')
+	url(r'^number/(\d+)/', views.randNum, name = 'number'),
+	url(r'^fraction/(\d{1,4})/(\d{1,4})', views.randFrac, name = 'fraction')
 ]
