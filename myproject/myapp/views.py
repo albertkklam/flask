@@ -5,13 +5,17 @@ from django.shortcuts import render, redirect
 # Create your views here.
 
 from django.http import HttpResponse
+from django.views.generic import TemplateView
 from myapp.models import Dreamreal
 import datetime
+
+class StaticView(TemplateView):
+   template_name = "myapp/static.html"
 
 def hello(request):
    today = datetime.datetime.now().date()
    daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-   return redirect("https://www.djangoproject.com")
+   return render(request, 'myapp/hello.html', {"today": today})
 
 def randNum(request, num):
    text = "A random number: %s" %num
