@@ -7,6 +7,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.views.generic import TemplateView
 from myapp.models import Dreamreal
+from myapp.forms import LoginForm
 import datetime
 
 class StaticView(TemplateView):
@@ -28,3 +29,17 @@ def randFrac(request, numerator, denominator):
 
 def morning(request):
 	return HttpResponse("""<h3>Good morning!</h3>""")
+
+def login(request):
+   username = "not logged in"
+   
+   if request.method == "POST":
+      #Get the posted form
+      MyLoginForm = LoginForm(request.POST)
+      
+      if MyLoginForm.is_valid():
+         username = MyLoginForm.cleaned_data['username']
+   else:
+      MyLoginForm = LoginForm()
+      
+   return render(request, 'myapp/loggedin.html', {"username" : username})
