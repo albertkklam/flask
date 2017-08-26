@@ -2,8 +2,8 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
+from wines.models import Wine
 
 def index(request):
-    number = 6
-    thing = "Thing name"
-    return render(request, 'index.html', {'number': number, 'thing': thing})
+    wines = Wine.objects.all()
+    return render(request, 'index.html', {'wines': wines,})

@@ -6,6 +6,8 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>Hello World!</h1>
-   	<p>This is my name: {{ thing|truncatewords:1 }}</p>
+    {% for wine in wines %}
+    <h2>{{ wine.name }}</h2>
+    <p>{{ wine.description }}</p>
+    {% endfor %}
 {% endblock content %}
