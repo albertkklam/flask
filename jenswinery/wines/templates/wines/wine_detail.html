@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ wine.name }} - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <h1>{{ wine.name }}</h1>
+    <p>{{ wine.description }}</p>
+    <a href="{% url 'edit_wine' slug=wine.slug %}">Edit me!</>
+{% endblock content %}
