@@ -7,5 +7,11 @@
 {% block content %}
     <h1>{{ wine.name }}</h1>
     <p>{{ wine.description }}</p>
-    <a href="{% url 'edit_wine' slug=wine.slug %}">Edit me!</>
+    {% if user == wine.user %}
+        <p>
+            <a href="{% url 'edit_wine' slug=wine.slug %}">
+                Edit me!
+            </a>
+        </p>
+    {% endif %}
 {% endblock content %}
