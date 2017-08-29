@@ -44,3 +44,13 @@ def create_wine(request):
     else:
         form = form_class()
     return render(request, 'wines/create_wine.html', {'form': form,})
+
+
+def browse_by_name(request, initial=None):
+    if initial:
+        wines = Wine.objects.filter(name__istartswith=initial)
+        wines = wines.order_by('name')
+    else:
+        wines = Wine.objects.all().order_by('name')
+
+    return render(request, 'search/search.html', {'wines': wines, 'initial': initial,})
