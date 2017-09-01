@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ wine.name }} - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <h1>{{ wine.name }}</h1>
+    <p>{{ wine.description }}</p>
+    {% if user == wine.user %}
+        <p>
+            <a href="{% url 'edit_wine' slug=wine.slug %}">
+                Edit me!
+            </a>
+        </p>
+    {% endif %}
+{% endblock content %}
