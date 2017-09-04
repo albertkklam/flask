@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from wines.models import Wine
+from wines.models import Wine, User
 
 class WineForm(ModelForm):
     class Meta:
