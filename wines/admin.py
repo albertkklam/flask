@@ -6,7 +6,7 @@ from wines.models import Wine
 
 class WineAdmin(admin.ModelAdmin):
     model = Wine
-    list_display = ('name', 'description',)
+    list_display = ('name','year','description',)
     prepopulated_fields = {'slug': ('name',)}
 
 admin.site.register(Wine, WineAdmin)
