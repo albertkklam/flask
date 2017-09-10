@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'wines',
     'registration',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
