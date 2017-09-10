@@ -26,7 +26,7 @@ class Wine(models.Model):
 	colour = models.CharField(max_length=50)
 	year = models.IntegerField()
 	grape = models.CharField(max_length=50)
-	region_country = models.CharField(max_length=100)
+	region = models.CharField(max_length=100)
 	price = models.DecimalField(max_digits=6, decimal_places=2)
 	abv = models.CharField(max_length=4,validators=[valid_pct])
 	description = models.TextField()
