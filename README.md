@@ -11,9 +11,11 @@ Good apps start with good web development practices. Learning about both through
 2. [Writing Your First Django App](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 3. [Tutorialspoint: Learn Django](https://www.tutorialspoint.com/django/index.htm)
 
-### HTML, CSS
+### HTML, CSS, SASS
 1. [Codecademy: Learn HTML](https://www.codecademy.com/learn/learn-html)
 2. [Codecademy: Learn CSS](https://www.codecademy.com/learn/learn-css)
+3. [An Introduction to CSS Pre-Processors: SASS, LESS and Stylus](https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus)
+4. [Learn Sass In 15 Minutes](https://tutorialzine.com/2016/01/learn-sass-in-15-minutes)
 
 ### Deployment
 1. [Heroku](https://www.heroku.com/)
