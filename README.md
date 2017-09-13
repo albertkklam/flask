@@ -16,6 +16,7 @@ Good apps start with good web development practices. Learning about both through
 2. [Codecademy: Learn CSS](https://www.codecademy.com/learn/learn-css)
 3. [An Introduction to CSS Pre-Processors: SASS, LESS and Stylus](https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus)
 4. [Learn Sass In 15 Minutes](https://tutorialzine.com/2016/01/learn-sass-in-15-minutes)
+5. [How to Compile Sass with Sublime Text](http://www.hongkiat.com/blog/sublime-text-compiling-sass/)
 
 ### Deployment
 1. [Heroku](https://www.heroku.com/)
