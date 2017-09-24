@@ -28,7 +28,7 @@ class Wine(models.Model):
 	grape = models.CharField(max_length=50)
 	region = models.CharField(max_length=100)
 	price = models.DecimalField(max_digits=6, decimal_places=2)
-	abv = models.CharField(max_length=4,validators=[valid_pct])
+	abv = models.CharField(max_length=4, validators=[valid_pct])
 	description = models.TextField()
 	mode_rating = models.DecimalField(max_digits=3, decimal_places=1)
 	winner = models.CharField(max_length=50)
