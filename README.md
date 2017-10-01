@@ -21,6 +21,8 @@ Good apps start with good web development practices. Learning about both through
 
 ### Deployment
 1. [Heroku](https://www.heroku.com/)
+2. [Heroku Logs](https://devcenter.heroku.com/articles/logging)
+
 
 <!---
 ### Flask
