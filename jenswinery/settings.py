@@ -127,7 +127,7 @@ STATICFILES_DIRS = (
 )
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_ROOT = 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 # Django registration
