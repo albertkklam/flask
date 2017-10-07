@@ -1562,9 +1562,9 @@
 
 			#header.alt nav {
 				right: -20em;
-				top: -10em;
+				top: -8em;
 				font-family: "Raleway", Helvetica, sans-serif;
-				font-weight: 700;
+				font-size: 1.2em;
 			}
 
 				#header.alt nav a {
