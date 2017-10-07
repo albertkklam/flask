@@ -19,10 +19,12 @@ Good apps start with good web development practices. Learning about both through
 5. [Learn Sass In 15 Minutes](https://tutorialzine.com/2016/01/learn-sass-in-15-minutes)
 6. [How to Compile Sass with Sublime Text](http://www.hongkiat.com/blog/sublime-text-compiling-sass/)
 
+### Templates
+1. [Templated](https://templated.co/)
+
 ### Deployment
 1. [Heroku](https://www.heroku.com/)
 2. [Heroku Logs](https://devcenter.heroku.com/articles/logging)
-
 
 <!---
 ### Flask
