@@ -1,10 +1,13 @@
-{% extends 'base.html' %}
+{% extends 'index.html' %}
 {% block title %}
     Rules - {{ block.super }}
 {% endblock title %}
 
-{% block content %}
-    <h1>Rules for Wine of the Week</h1>
+{% block header %}
+    <h1>Rules</h1>
+{% endblock header %}
+
+{% block banner %}
     <ol>
     	<li>Each week, one person nominates to bring a bottle of wine</li>
 		<li>Without knowing the wine, participants taste and attempt to determine its attributes</li>
@@ -13,7 +16,6 @@
 		<li>The Wine of the Week and participants' results are added to Jen's Winery</li>
 	</ol>
 
-	<h2>Conditions</h2>
 	<ul>
 		<li>The bottle of wine should at most be $23</li>
 		<li>The only allowable resource during tasting is the chart on the glass of Maroon</li>
@@ -22,4 +24,6 @@
 		<li>The rating recorded in Jen's Winery is the group's modal rating</li>
 		<li>All glasses must be returned to the Power Rangers' area or kept for the following week!</li>
 	</ul>
-{% endblock content %}
+{% endblock banner %}
+
+{% block items %}{% endblock items %}

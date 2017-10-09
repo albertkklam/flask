@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Jen's Winery - {% block title %}{% endblock %}</title>
+		<title>{% block title %} Jen's Winery {% endblock title %}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css"/>
@@ -23,8 +23,10 @@
 							<li><a href="{% url 'about' %}">About</a></li>
 						</ul>
 					</nav>
+					{% block header %}
 					<h1>Jen's Winery</h1>
 					<p>Since 2017</p>
+					{% endblock header %}
 				</div>
 			</header>
 
@@ -34,7 +36,9 @@
 			<div id="wrapper">
 
 				<!-- Banner -->
+					
 					<section id="intro" class="main">
+					{% block banner %}
 						<span class="icon fa-road major"></span>
 						<h2>Humble Beginnings</h2>
 						<p>Established in 2017, Jen's Winery is the culmination of more than a millenia of winesmanship. <br />
@@ -46,9 +50,12 @@
 						<ul class="actions">
 							<li><a href="{% url 'about' %}" class="button big">Learn More</a></li>
 						</ul>
+					{% endblock banner %}
 					</section>
 
+
 				<!-- Items -->
+					{% block items %}
 					<section class="main items">
 						<article class="item">
 							<header>
@@ -102,6 +109,7 @@
 							<li><a href="#" class="button big">Get Started</a></li>
 						</ul>
 					</section>
+					{% endblock items %}
 
 				<!-- Main -->
 				<!--
@@ -114,6 +122,7 @@
 				-->
 
 				<!-- Footer -->
+					
 					<footer id="footer">
 						<ul class="icons">
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
