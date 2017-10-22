@@ -1436,10 +1436,11 @@
 		#header nav {
 			height: inherit;
 			line-height: inherit;
-			position: absolute;
-			right: 1.25em;
-			top: 0;
 			vertical-align: middle;
+			font-family: "Raleway", Helvetica, sans-serif;
+			font-size: 1.2em;
+			position: relative;
+			z-index: 1;
 		}
 
 			#header nav ul {
@@ -1553,7 +1554,7 @@
 			#header.alt h1 {
 				font-size: 4em;
 				padding: 0 0.5em 0.25em 0.5em;
-				border-bottom: solid 2px #ffffff;
+				border-bottom: solid 2px #FFF;
 				font-weight: 200;
 				font-family: "Mrs Saint Delafield", cursive;
 				text-transform: none;
@@ -1561,10 +1562,6 @@
 			}
 
 			#header.alt nav {
-				right: -20em;
-				top: -8em;
-				font-family: "Raleway", Helvetica, sans-serif;
-				font-size: 1.2em;
 			}
 
 				#header.alt nav a {
