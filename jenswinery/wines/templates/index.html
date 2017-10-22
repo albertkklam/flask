@@ -15,16 +15,18 @@
 	<body class="landing">
 
 		<!-- Header -->
-			<header>
+			<section id="nav">
 				<div>
-					<nav>
+					<!--<a href="{% url 'home' %}"><strong>JW</a>-->
+					<nav id="nav">
 						<ul>
+							<li><a href="{% url 'home' %}"><strong>JW</strong></a></li>
 							<li><a href="{% url 'rules' %}">Rules</a></li>
 							<li><a href="{% url 'about' %}">About</a></li>
 						</ul>
 					</nav>
 				</div>
-			</header>
+			</section>
 
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
