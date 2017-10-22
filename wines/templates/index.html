@@ -15,24 +15,34 @@
 	<body class="landing">
 
 		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="inner">
+			<section id="nav">
+				<div>
+					<!--<a href="{% url 'home' %}"><strong>JW</a>-->
 					<nav id="nav">
 						<ul>
+							<li><a href="{% url 'home' %}">JW</a></li>
 							<li><a href="{% url 'rules' %}">Rules</a></li>
 							<li><a href="{% url 'about' %}">About</a></li>
 						</ul>
 					</nav>
-					{% block header %}
-					<h1>Jen's Winery</h1>
-					<p>Since 2017</p>
-					{% endblock header %}
 				</div>
-			</header>
+			</section>
 
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 		<!-- Wrapper -->
+			<section id="header" class="alt">
+				<div class="inner">
+					<header>
+						{% block header %}
+						<h1>Jen's Winery</h1>
+						<p>Since 2017</p>
+						{% endblock header %}
+					</header>
+				</div>
+			</section>
+
+
 			<div id="wrapper">
 
 				<!-- Banner -->
@@ -71,26 +81,6 @@
 							<header>
 								<a href="#"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
 								<h3>Blandit adipiscing</h3>
-							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article class="item">
-							<header>
-								<a href="#"><img src="{% static 'images/pic03.jpg' %}" alt="" /></a>
-								<h3>Lorem massa nulla</h3>
-							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article class="item">
-							<header>
-								<a href="#"><img src="{% static 'images/pic04.jpg' %}" alt="" /></a>
-								<h3>Ipsum sed tempus</h3>
 							</header>
 							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
 							<ul class="actions">
