@@ -1399,15 +1399,14 @@
 
 		#nav ul {
 			list-style: none;
-			margin: 0;
-			padding-left: 5em;
+			padding-left: 4em;
 		}
 
 			#nav ul li {
 				border-radius: 4px;
 				display: inline-block;
-				margin-left: 2.5em;
 				padding-left: 0;
+				margin-left: 2em;
 			}
 
 				#nav ul li a {
@@ -1426,8 +1425,12 @@
 
 				#nav ul li:first-child {
 					margin-left: 0em;
-					margin-right: 45em;
+					margin-right: 40em;
 					font-weight: 700;
+				}
+
+				#nav ul li:last-child {
+					padding-right: 4em;
 				}
 
 				/*

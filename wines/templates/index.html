@@ -21,6 +21,7 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="{% url 'home' %}">JW</a></li>
+							<li><a href="{% url 'browse' %}">Browse</a></li>
 							<li><a href="{% url 'rules' %}">Rules</a></li>
 							<li><a href="{% url 'about' %}">About</a></li>
 						</ul>
@@ -70,11 +71,11 @@
 						<article class="item">
 							<header>
 								<a href="#"><img src="{% static 'images/pic01.jpg' %}" alt="" /></a>
-								<h3>Feugiat et faucibus</h3>
+								<h3>The Vault</h3>
 							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+							<p>The ultimate collection for every occasion. Whether it's a toddler's birthday party or a dinner with the in-laws, we have a wine that will make time pass slightly faster than usual.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="{% url 'browse' %}" class="button">Browse</a></li>
 							</ul>
 						</article>
 						<article class="item">
