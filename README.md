@@ -11,7 +11,7 @@ Good apps start with good web development practices. Learning about both through
 2. [Writing Your First Django App](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 3. [Tutorialspoint: Learn Django](https://www.tutorialspoint.com/django/index.htm)
 
-### HTML, CSS, Sass
+### HTML, CSS, and Sass
 1. [Codecademy: Learn HTML](https://www.codecademy.com/learn/learn-html)
 2. [Codecademy: Learn CSS](https://www.codecademy.com/learn/learn-css)
 3. [Codecademy: Learn Sass](https://www.codecademy.com/learn/learn-sass)
@@ -19,8 +19,11 @@ Good apps start with good web development practices. Learning about both through
 5. [Learn Sass In 15 Minutes](https://tutorialzine.com/2016/01/learn-sass-in-15-minutes)
 6. [How to Compile Sass with Sublime Text](http://www.hongkiat.com/blog/sublime-text-compiling-sass/)
 
-### Templates
+### Templates and designs
 1. [Templated](https://templated.co/)
+2. [Font Awesome](http://fontawesome.io/)
+3. [Google Fonts](https://fonts.google.com/)
+4. [Unsplash](https://unsplash.com/)
 
 ### Deployment
 1. [Heroku](https://www.heroku.com/)
