@@ -1,5 +1,23 @@
 {% extends 'index.html' %}
 
+{% load staticfiles %}
+
+{% block additional_styles %}
+    <style>
+        #header {
+            background-image: url({% static 'images/pic01.jpg' %});
+        }
+
+        #header.alt h1 {
+            font-family: "Cinzel", serif;
+        }
+
+        body {
+            font-family: "Cinzel", serif
+        }
+    </style>
+{% endblock %}
+
 {% block title %}
     Browse - {{ block.super }}
 {% endblock title %}

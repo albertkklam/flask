@@ -1,4 +1,27 @@
 {% extends 'index.html' %}
+
+{% load staticfiles %}
+
+{% block additional_styles %}
+    <style>
+        #header {
+            background-image: url({% static 'images/pic04.jpg' %});
+        }
+
+        #header.alt h1 {
+            font-family: "Shadows Into Light", cursive;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        li {
+            text-align: left;
+        }
+    </style>
+{% endblock %}
+
 {% block title %}
     Rules - {{ block.super }}
 {% endblock title %}
@@ -8,17 +31,11 @@
 {% endblock header %}
 
 {% block banner %}
-    <ol>
-    	<li>Each week, one person nominates to bring a bottle of wine</li>
-		<li>Without knowing the wine, participants taste and attempt to determine its attributes</li>
-		<li>Participants are scored on their accuracy of their entries by the bringer of wine</li>
-		<li>The person with highest score wins or loses respect for being the biggest alcoholic</li>
-		<li>The Wine of the Week and participants' results are added to Jen's Winery</li>
-	</ol>
+    	<p> Each week, one person nominates to bring a bottle of wine. Without knowing the wine, participants taste and attempt to determine its attributes. Participants are then scored on their accuracy of their entries by the bringer of wine. The person with highest score wins or loses respect for being the biggest alcoholic. The Wine of the Week and participants' results are forever enshrined in Jen's Winery.</p>
 
 	<ul>
 		<li>The bottle of wine should at most be $23</li>
-		<li>The only allowable resource during tasting is the chart on the glass of Maroon</li>
+		<li>The only allowable resource during tasting is the chart on the glass wall of Maroon</li>
 		<li>At most three tasting note choices are allowed in general (four are allowed if the participant didn't taste the wine at all)</li>
 		<li>Participants who choose 'Australia' as the region must be more specific (e.g. they must choose a state in Australia)</li>
 		<li>The rating recorded in Jen's Winery is the group's modal rating</li>
