@@ -17,7 +17,6 @@
 		<!-- Header -->
 			<section id="nav">
 				<div>
-					<!--<a href="{% url 'home' %}"><strong>JW</a>-->
 					<nav id="nav">
 						<ul>
 							<li><a href="{% url 'home' %}">JW</a></li>
@@ -32,6 +31,22 @@
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 		<!-- Wrapper -->
+			{% block additional_styles %}
+	            <style>
+	            	#header {
+	            		 background-image: url({% static 'images/banner.jpg' %});
+	               	}
+
+	               	#header.alt h1 {
+	               		font-family: "Mrs Saint Delafield", cursive;
+	               	}
+
+	               	.item h2 h3 {
+	               		font-family: "Cinzel", serif
+	               	}
+
+	            </style>
+			{% endblock %}
 			<section id="header" class="alt">
 				<div class="inner">
 					<header>
@@ -42,7 +57,6 @@
 					</header>
 				</div>
 			</section>
-
 
 			<div id="wrapper">
 
@@ -80,10 +94,10 @@
 						</article>
 						<article class="item">
 							<header>
-								<a href="#"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
-								<h3>Blandit adipiscing</h3>
+								<a href="#"><img src="{% static 'images/pic04.jpg' %}" alt="" /></a>
+								<h3>Rules</h3>
 							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+							<p>Like every successful civilisation, Jen's Winery is governed by a set of democratic and just rules. To the best of our knowledge, dissidents do not exist... anymore.</p>
 							<ul class="actions">
 								<li><a href="#" class="button">More</a></li>
 							</ul>
@@ -97,7 +111,7 @@
 						We didn't choose to serve Our Glorious Leader, we were chosen.<br />
 						</p>
 						<ul class="actions">
-							<li><a href="#" class="button big">Get Started</a></li>
+							<li><a href="{% url 'about' %}" class="button big">Get Started</a></li>
 						</ul>
 					</section>
 					{% endblock items %}

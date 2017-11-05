@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
 @import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 
 /*
 	Epilogue by TEMPLATED
@@ -1468,7 +1471,6 @@
 		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 8em 0 6em 0;
-		background-image: url(../images/banner.jpg);
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -1527,7 +1529,6 @@
 		}
 
 		#header .inner {
-			position: relative;
 			z-index: 1;
 		}
 
@@ -1547,6 +1548,11 @@
 			height: 20em;
 			min-height: 20em;
 			min-height: 75vh;
+			-moz-transition: opacity 2s ease;
+			-webkit-transition: opacity 2s ease;
+			-ms-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+			opacity: 1;
 		}
 
 			#header.alt:before {
@@ -1566,7 +1572,7 @@
 				padding: 0 0.5em 0.25em 0.5em;
 				border-bottom: solid 2px #FFF;
 				font-weight: 200;
-				font-family: "Mrs Saint Delafield", cursive;
+				/*font-family: "Mrs Saint Delafield", cursive;*/
 				text-transform: none;
 				letter-spacing: 0;
 			}
@@ -1589,14 +1595,6 @@
 				font-weight: 400;
 				font-size: 0.8em;
 				padding: 0 1.25em;
-			}
-
-			#header.alt .inner {
-				-moz-transition: opacity 2s ease;
-				-webkit-transition: opacity 2s ease;
-				-ms-transition: opacity 2s ease;
-				transition: opacity 2s ease;
-				opacity: 1;
 			}
 
 		body.is-loading #header.alt:before {

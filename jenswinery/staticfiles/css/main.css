@@ -1,7 +1,10 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
 @import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 
 /*
 	Epilogue by TEMPLATED
@@ -1382,6 +1385,70 @@
 
 		}
 
+/* Nav */
+
+	#nav {
+		background:rgba(0,0,0,0);
+		color: rgba(255, 255, 255, 0.75);
+		padding: 0.7em 0 0.7em 0;
+		vertical-align: middle;
+		font-family: Raleway, Helvetica, sans-serif;
+		font-weight: 300;
+		font-size: 1.1em;
+		position: relative;
+		z-index: 1;
+	}
+
+
+		#nav ul {
+			list-style: none;
+			padding-left: 4em;
+		}
+
+			#nav ul li {
+				border-radius: 4px;
+				display: inline-block;
+				padding-left: 0;
+				margin-left: 2em;
+			}
+
+				#nav ul li a {
+					-moz-transition: color 0.2s ease-in-out;
+					-webkit-transition: color 0.2s ease-in-out;
+					-ms-transition: color 0.2s ease-in-out;
+					transition: color 0.2s ease-in-out;
+					color: #666;
+					display: inline-block;
+					text-decoration: none;
+				}
+
+					#nav ul li a:hover {
+						color: #484848;
+					}
+
+				#nav ul li:first-child {
+					margin-left: 0em;
+					margin-right: 40em;
+					font-weight: 700;
+				}
+
+				#nav ul li:last-child {
+					padding-right: 4em;
+				}
+
+				/*
+				#nav ul li .button {
+					border-color: rgba(144, 144, 144, 0.25);
+					box-shadow: none;
+					height: 3em;
+					line-height: 2.9em;
+					margin-bottom: 0;
+					padding: 0 1.5em;
+					position: relative;
+					top: -0.075em;
+					vertical-align: middle;
+				}*/
+
 /* Header */
 
 	#header {
@@ -1404,7 +1471,6 @@
 		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 8em 0 6em 0;
-		background-image: url(../images/banner.jpg);
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -1432,59 +1498,6 @@
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
 			color: #ffffff;
 		}
-
-		#header nav {
-			height: inherit;
-			line-height: inherit;
-			position: absolute;
-			right: 1.25em;
-			top: 0;
-			vertical-align: middle;
-		}
-
-			#header nav ul {
-				list-style: none;
-				margin: 0;
-				padding-left: 0;
-			}
-
-				#header nav ul li {
-					border-radius: 4px;
-					display: inline-block;
-					margin-left: 2.5em;
-					padding-left: 0;
-				}
-
-					#header nav ul li a {
-						-moz-transition: color 0.2s ease-in-out;
-						-webkit-transition: color 0.2s ease-in-out;
-						-ms-transition: color 0.2s ease-in-out;
-						transition: color 0.2s ease-in-out;
-						color: #666;
-						display: inline-block;
-						text-decoration: none;
-					}
-
-						#header nav ul li a:hover {
-							color: #484848;
-						}
-
-					#header nav ul li:first-child {
-						margin-left: 0;
-					}
-
-					#header nav ul li .button {
-						border-color: rgba(144, 144, 144, 0.25);
-						box-shadow: none;
-						height: 3em;
-						line-height: 2.9em;
-						margin-bottom: 0;
-						padding: 0 1.5em;
-						position: relative;
-						top: -0.075em;
-						vertical-align: middle;
-					}
-
 
 		#header blockquote {
 			border-left-color: #ffffff;
@@ -1516,7 +1529,6 @@
 		}
 
 		#header .inner {
-			position: relative;
 			z-index: 1;
 		}
 
@@ -1536,6 +1548,11 @@
 			height: 20em;
 			min-height: 20em;
 			min-height: 75vh;
+			-moz-transition: opacity 2s ease;
+			-webkit-transition: opacity 2s ease;
+			-ms-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+			opacity: 1;
 		}
 
 			#header.alt:before {
@@ -1553,18 +1570,14 @@
 			#header.alt h1 {
 				font-size: 4em;
 				padding: 0 0.5em 0.25em 0.5em;
-				border-bottom: solid 2px #ffffff;
+				border-bottom: solid 2px #FFF;
 				font-weight: 200;
-				font-family: "Mrs Saint Delafield", cursive;
+				/*font-family: "Mrs Saint Delafield", cursive;*/
 				text-transform: none;
 				letter-spacing: 0;
 			}
 
 			#header.alt nav {
-				right: -20em;
-				top: -8em;
-				font-family: "Raleway", Helvetica, sans-serif;
-				font-size: 1.2em;
 			}
 
 				#header.alt nav a {
@@ -1582,14 +1595,6 @@
 				font-weight: 400;
 				font-size: 0.8em;
 				padding: 0 1.25em;
-			}
-
-			#header.alt .inner {
-				-moz-transition: opacity 2s ease;
-				-webkit-transition: opacity 2s ease;
-				-ms-transition: opacity 2s ease;
-				transition: opacity 2s ease;
-				opacity: 1;
 			}
 
 		body.is-loading #header.alt:before {
@@ -1789,89 +1794,6 @@
 			transform: translateX(0);
 			box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
-		}
-
-/* Banner */
-
-	body.is-touch #banner {
-		background-attachment: scroll;
-	}
-
-	#banner {
-		padding: 16em 0 13em 0;
-		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: center top;
-		background-size: cover;
-		line-height: 1.75;
-		text-align: center;
-	}
-
-		#banner:last-child {
-			margin-bottom: 0;
-		}
-
-		#banner h2 {
-			color: #ffffff;
-			display: inline-block;
-			font-size: 3.5em;
-			line-height: 1.35;
-			margin-bottom: 0.5em;
-		}
-
-		#banner p {
-			color: #aaa;
-			font-size: 1.5em;
-			margin-bottom: 1.75em;
-			text-transform: uppercase;
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#banner {
-				padding: 14em 0 11em 0;
-			}
-
-				#banner h2 {
-					font-size: 2.5em;
-				}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#banner {
-				padding: 9em 0 7em 0;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#banner {
-				padding: 6em 2em 6em 2em;
-			}
-
-				#banner br {
-					display: none;
-				}
-
-				#banner h2 {
-					font-size: 2.25em;
-				}
-
-				#banner p {
-					font-size: 1.25em;
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#banner {
-				padding: 4em 2em 4em 2em;
-			}
-
 		}
 
 /* Main */
