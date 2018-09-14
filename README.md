@@ -2,7 +2,7 @@
 
 ## Overview
 
-Good apps start with good web development practices. Learning about both through [Django](https://www.djangoproject.com/), a popular Python web framework
+Good apps start with good web development practices. Learning about both through [Django](https://www.djangoproject.com/), a popular Python web framework. This project is motivated by [Hello Web App](https://hellowebbooks.com/tutorial/).
 
 ## Resources
 
@@ -28,14 +28,3 @@ Good apps start with good web development practices. Learning about both through
 ### Deployment
 1. [Heroku](https://www.heroku.com/)
 2. [Heroku Logs](https://devcenter.heroku.com/articles/logging)
-
-<!---
-### Flask
-1. [Flask: Quickstart](http://flask.pocoo.org/docs/0.12/quickstart/)
-2. [The Ultimate Flask Front-end](https://realpython.com/blog/python/the-ultimate-flask-front-end/)
-
-### Dashboarding
-1. [Interactive Data Visualisation of Geospatial Data using D3.js, DC.js, Leaflet.js and Python](http://adilmoujahid.com//posts/2016/08/interactive-data-visualization-geospatial-d3-dc-leaflet-python/)
-2. [Dashboards by Keen IO](http://keen.github.io/dashboards/)
-3. [Pyxley](http://pyxley.readthedocs.io/en/latest/index.html)
---->
