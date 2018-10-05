@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block title %}
+    Homepage - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    {% for wine in wines %}
+    <h2>
+        <a href="{% url 'wine_detail' slug=wine.slug %}">
+            {{ wine.name }}
+        </a>
+    </h2>
+    <p>{{ wine.description }}</p>
+    {% endfor %}
+{% endblock content %}

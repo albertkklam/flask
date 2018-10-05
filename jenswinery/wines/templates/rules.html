@@ -1,0 +1,46 @@
+{% extends 'index.html' %}
+
+{% load staticfiles %}
+
+{% block additional_styles %}
+    <style>
+        #header {
+            background-image: url({% static 'images/pic04.jpg' %});
+        }
+
+        #header.alt h1 {
+            font-family: "Shadows Into Light", cursive;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        li {
+            text-align: left;
+        }
+    </style>
+{% endblock %}
+
+{% block title %}
+    Rules - {{ block.super }}
+{% endblock title %}
+
+{% block header %}
+    <h1>Rules</h1>
+{% endblock header %}
+
+{% block banner %}
+    	<p> Each week, one person nominates to bring a bottle of wine. Without knowing the wine, participants taste and attempt to determine its attributes. Participants are then scored on their accuracy of their entries by the bringer of wine. The person with highest score wins or loses respect for being the biggest alcoholic. The Wine of the Week and participants' results are forever enshrined in Jen's Winery.</p>
+
+	<ul>
+		<li>The bottle of wine should at most be $23</li>
+		<li>The only allowable resource during tasting is the chart on the glass wall of Maroon</li>
+		<li>At most three tasting note choices are allowed in general (four are allowed if the participant didn't taste the wine at all)</li>
+		<li>Participants who choose 'Australia' as the region must be more specific (e.g. they must choose a state in Australia)</li>
+		<li>The rating recorded in Jen's Winery is the group's modal rating</li>
+		<li>All glasses must be returned to the Power Rangers' area or kept for the following week!</li>
+	</ul>
+{% endblock banner %}
+
+{% block items %}{% endblock items %}
